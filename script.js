@@ -50,7 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
         text: "Який предмет потрібен для активації порталу в Енд?",
         answers: ["Око Краю", "Перлина Краю", "Зірка Незеру", "Тотем безсмертя"],
         correct: 0
-    }
+    },
+		{
+			text:"Питання",
+			answers: ["1", "2", "3", "4"],
+			correct: 1
+		},
 ];
 
    const audio = document.querySelector("#clickAudio")
