@@ -1,0 +1,126 @@
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('assets/minecraft_1.1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+p, h3, h2, h1, span, button {
+   font-family:'Minecraft';
+}
+
+
+body {
+    font-family:'Minecraft';
+    background-color:#f2f7ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)),
+        url("https://images.steamusercontent.com/ugc/2310974141604980016/B4EF3A7A2D1772DE26B1A6F51CE33A04FD8BB917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    
+    --minecraft-color-darkgray:#8f8f8f;
+    --minecraft-color-gray:#8b8b8b;
+    --minecraft-color-lightgray:#c6c6c6;
+    --minecraft-color-black:#373737;
+    
+    --minecraft-color-fern:#588157;
+    --minecraft-color-huntergreen:#3A5A40;
+    --minecraft-color-dustylavender:#7F5A83;
+    --minecraft-color-cottonrose:#EFC7C2;
+}
+    
+#answers-container {
+    display: flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content: center;
+    align-content: center;
+    height: 50%;
+    margin-top: 350px; 
+}
+
+.answer-btn, button {
+    background-image: url("assets/button1.png");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 670px;
+    height: 65px;
+    border: solid 3px black;
+    color: white;
+    font-size: 25px;
+    text-shadow: 3px 3px 0px black;
+    margin-top: 30px;
+    transition: 0.3s box-shadow; 
+}
+
+.answer-btn:hover, button:hover {
+    cursor: pointer;
+    border: solid 3px white;
+}
+
+.screen {
+/*    padding: 25px;*/
+/*    max-width: 70vw;*/
+/*    width: 60vw;*/
+/*    height: 40vh;*/
+    
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    box-shadow: 0 0 10px 10px lime;
+    background-image: url("assets/button_disabled.png");
+}
+
+.wrong {
+    box-shadow: 0 0 10px 10px red;
+    background-image: url("assets/button_disabled.png");
+}
+
+.header, #result-screen {
+    position:absolute;
+    top: -75px;
+    left: calc(50vw - 600px / 2);
+    width: 600px;
+    height: 600px;
+    padding-top:calc(600px / 2);
+    font-size: 22px;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url("assets/image.png");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#question-text {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#restart-btn {
+    margin-top: 350px;
+    width: 600px;
+}
+
+button:active {
+    background-image: url("assets/button_disabled.png");
+}

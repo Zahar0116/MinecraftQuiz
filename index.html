@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <title>Minecraft Quiz</title>
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app-container">
+    <div id="start-screen" class="screen" >
+        <h1></h1>
+        <button id="start-btn">Почати</button>
+    </div>
+    <div id="quiz-screen" class="screen hide">
+        <div class="header">
+            <span id="timer">Час: 15</span>
+            <span id="score-display">Бали: 0</span>
+            <h2 id="question-text">Question1</h2>
+        </div>
+        
+        
+        <div id="answers-container"></div>
+    </div>
+    <div id="result-screen" class="screen hide">
+         <h2>Квіз завершено!</h2>
+         <p id="result-text"></p>
+         <button id="restart-btn">Спробувати ще</button>
+    </div>
+</div>
+
+<!-- Hidden audio element -->
+<audio id="clickAudio" src="assets/MinecraftClick.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
